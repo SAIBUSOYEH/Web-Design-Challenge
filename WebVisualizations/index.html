@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+        <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+#container{
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar {
+  padding: 10px;
+  background:none;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  background:none;
+  color: #000;
+}
+
+
+.navbar li a {
+    color: #000;
+  text-decoration: none;
+}
+
+
+h1{
+  color: green;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px:
+  
+}
+
+h2{
+        color:green;
+        text-align: center;
+        padding: 20px;
+
+}
+
+h4{
+        color:green;
+        text-align:center;
+}
+#footer{
+    padding: 15px;
+    background-color: grey;
+    color:whitesmoke;
+    text-align: center;
+}
+</style> 
+</head>
+
+
+  <body>
+    <div id="container">
+        <div class="row">
+            <div class="col-lg-6" id="media">
+                <nav class="navbar">
+                    <ul>
+                        <h1><a>Latitude</a></h1>
+                    </ul>
+                </nav>
+            </div>
+        
+        <div class="col-lg-6" id="media">
+        <nav class="navbar">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    
+                     <ul class="dropdown-menu">
+                        <li><a href="Temperature.html">Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a href="WindSpeed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                   
+                <li><a href="Comparison2.html">Comparison</a></li> 
+                        
+                <li><a href="Data2.html">Data</a></li>
+                        
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="container-fluid" >
+        <div class="row">
+        <div class="col-lg-6" id="media">
+                <h2 class="mt-0">Summary : Latitude vs. X </h2>
+                <br></br>
+                <div class="media">
+                        
+                        <img src="Assets\Fig1.png" width=350px class="mt-0" alt="City Latitude Vs Max Temp">
+                        <div class="media-body">
+                    
+                        <p>The purpose of this project was to analyze how weather changes as you get close to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assembly a dataset on over 500 cities</p>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspect of the weather vs. latitude. Factors we looked at included:</p>
+                        <p>temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explorations and descriptions of any trends and corrections witnessed</p>
+                        </div>
+                </div>
+        </div>
+        <div class="col-lg-5" id="content">
+                <h2 class="mt-0">Visualizations </h2>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                <h4 class="mt-0">Temperature</h4>
+             <img src="Assets\Fig1.png" width="250px" alt="City Latitude vs. Max Temp."/>
+                </div>
+            
+
+             <div class="col-lg-6">
+             <h4 class="mt-0">Humidity</h4>
+                <img src="Assets\Fig2.png" width="250px" alt="City Latitude vs. Humidity"/>
+               </div>
+                </div>
+
+               <div class="row">
+                <div class="col-lg-6">
+                <h4 class="mt-0">Cloudiness </h4>
+             <img src="Assets\Fig3.png" width="250px" alt="City Latitude vs. Cloudiness"/>
+                </div>
+             <div class="col-lg-6">
+                <h4 class="mt-0">Wind Speed</h4>
+                <img src="Assets\Fig4.png" width="250px" alt="City Latitude vs. Wind Speed"/>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    </div>
+        <div id="footer">
+        &copy; Copyright Coding Bootcamp 2019.
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
